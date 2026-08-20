@@ -242,6 +242,8 @@ namespace IoTbitNTP {
             return false
         }
 
+        // Počkáme na aktualizaci SNTP po změně z UTC+8 na UTC+0
+        basic.pause(2000)
 
         // --------------------------------
         // 3. ČEKÁNÍ NA PLATNÝ NTP ČAS
